@@ -1,0 +1,2 @@
+Plant 4 produced 12400 units in week 10.
+Output dropped 6 percent due to packaging line downtime.

@@ -1,0 +1,470 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "generation_source-generation_reports",
+          "column": "report_id"
+        },
+        "meta": {},
+        "id": "a32eaa1f-3a76-47cf-8492-7b1bbd9259d9",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 83,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 1,
+        "missing_percent": 1.2048192771084338,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "unexpected_list": [],
+        "unexpected_index_list": [],
+        "unexpected_index_query": "df.filter(items=[], axis=0)"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "generation_source-generation_reports",
+          "column": "inverter_id"
+        },
+        "meta": {},
+        "id": "ecfde711-cc9a-4fe9-9fee-a1ce459df0d0",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 83,
+        "unexpected_count": 7,
+        "unexpected_percent": 8.433734939759036,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 7
+          }
+        ],
+        "partial_unexpected_index_list": [
+          3,
+          16,
+          29,
+          30,
+          43,
+          50,
+          60
+        ],
+        "unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "unexpected_index_list": [
+          3,
+          16,
+          29,
+          30,
+          43,
+          50,
+          60
+        ],
+        "unexpected_index_query": "df.filter(items=[3, 16, 29, 30, 43, 50, 60], axis=0)"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "generation_source-generation_reports",
+          "column": "report_date"
+        },
+        "meta": {},
+        "id": "cd94f9e2-4eee-4a1d-8343-39c5af1b923b",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 83,
+        "unexpected_count": 6,
+        "unexpected_percent": 7.228915662650602,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 6
+          }
+        ],
+        "partial_unexpected_index_list": [
+          9,
+          29,
+          31,
+          47,
+          51,
+          60
+        ],
+        "unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "unexpected_index_list": [
+          9,
+          29,
+          31,
+          47,
+          51,
+          60
+        ],
+        "unexpected_index_query": "df.filter(items=[9, 29, 31, 47, 51, 60], axis=0)"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "generation_source-generation_reports",
+          "column": "power_output_kw",
+          "row_condition": {
+            "pass_through_filter": "power_output_kw != -999.5",
+            "type": "pass_through"
+          },
+          "condition_parser": "pandas",
+          "min_value": 0.0,
+          "max_value": 1000.0
+        },
+        "meta": {},
+        "id": "d7fb7597-4e71-4dc3-a614-7636758aab7f",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 82,
+        "unexpected_count": 10,
+        "unexpected_percent": 12.5,
+        "partial_unexpected_list": [
+          -15.2,
+          -3.4,
+          9999.9,
+          -0.5,
+          -12.0,
+          99999.0,
+          -5.4,
+          5000.0,
+          -8.0,
+          99999.0
+        ],
+        "missing_count": 2,
+        "missing_percent": 2.4390243902439024,
+        "unexpected_percent_total": 12.195121951219512,
+        "unexpected_percent_nonmissing": 12.5,
+        "partial_unexpected_counts": [
+          {
+            "value": 99999.0,
+            "count": 2
+          },
+          {
+            "value": -15.2,
+            "count": 1
+          },
+          {
+            "value": -12.0,
+            "count": 1
+          },
+          {
+            "value": -8.0,
+            "count": 1
+          },
+          {
+            "value": -5.4,
+            "count": 1
+          },
+          {
+            "value": -3.4,
+            "count": 1
+          },
+          {
+            "value": -0.5,
+            "count": 1
+          },
+          {
+            "value": 5000.0,
+            "count": 1
+          },
+          {
+            "value": 9999.9,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          5,
+          15,
+          22,
+          28,
+          32,
+          35,
+          41,
+          45,
+          52,
+          55
+        ],
+        "unexpected_list": [
+          -15.2,
+          -3.4,
+          9999.9,
+          -0.5,
+          -12.0,
+          99999.0,
+          -5.4,
+          5000.0,
+          -8.0,
+          99999.0
+        ],
+        "unexpected_index_list": [
+          5,
+          15,
+          22,
+          28,
+          32,
+          35,
+          41,
+          45,
+          52,
+          55
+        ],
+        "unexpected_index_query": "df.filter(items=[5, 15, 22, 28, 32, 35, 41, 45, 52, 55], axis=0)"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "generation_source-generation_reports",
+          "column": "battery_temp_c",
+          "min_value": -20.0,
+          "max_value": 80.0
+        },
+        "meta": {},
+        "id": "02a8cd19-5d00-480d-89a0-8f8ef6925afa",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 83,
+        "unexpected_count": 15,
+        "unexpected_percent": 18.29268292682927,
+        "partial_unexpected_list": [
+          85.1,
+          85.1,
+          91.3,
+          91.3,
+          120.0,
+          150.0,
+          -999.0,
+          102.3,
+          92.5,
+          150.0,
+          200.0,
+          95.0,
+          105.0,
+          92.0,
+          150.0
+        ],
+        "missing_count": 1,
+        "missing_percent": 1.2048192771084338,
+        "unexpected_percent_total": 18.072289156626507,
+        "unexpected_percent_nonmissing": 18.29268292682927,
+        "partial_unexpected_counts": [
+          {
+            "value": 150.0,
+            "count": 3
+          },
+          {
+            "value": 85.1,
+            "count": 2
+          },
+          {
+            "value": 91.3,
+            "count": 2
+          },
+          {
+            "value": -999.0,
+            "count": 1
+          },
+          {
+            "value": 92.0,
+            "count": 1
+          },
+          {
+            "value": 92.5,
+            "count": 1
+          },
+          {
+            "value": 95.0,
+            "count": 1
+          },
+          {
+            "value": 102.3,
+            "count": 1
+          },
+          {
+            "value": 105.0,
+            "count": 1
+          },
+          {
+            "value": 120.0,
+            "count": 1
+          },
+          {
+            "value": 200.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          6,
+          7,
+          10,
+          11,
+          15,
+          17,
+          29,
+          33,
+          37,
+          39,
+          42,
+          46,
+          53,
+          57,
+          59
+        ],
+        "unexpected_list": [
+          85.1,
+          85.1,
+          91.3,
+          91.3,
+          120.0,
+          150.0,
+          -999.0,
+          102.3,
+          92.5,
+          150.0,
+          200.0,
+          95.0,
+          105.0,
+          92.0,
+          150.0
+        ],
+        "unexpected_index_list": [
+          6,
+          7,
+          10,
+          11,
+          15,
+          17,
+          29,
+          33,
+          37,
+          39,
+          42,
+          46,
+          53,
+          57,
+          59
+        ],
+        "unexpected_index_query": "df.filter(items=[6, 7, 10, 11, 15, 17, 29, 33, 37, 39, 42, 46, 53, 57, 59], axis=0)"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "suite_name": "generation_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 5,
+    "successful_expectations": 1,
+    "unsuccessful_expectations": 4,
+    "success_percent": 20.0
+  },
+  "meta": {
+    "great_expectations_version": "1.12.3",
+    "expectation_suite_name": "generation_suite",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2026-03-01T21:02:13.974248-06:00"
+    },
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260302T030213.966257Z",
+      "pandas_data_fingerprint": "5db417145236535a2645cadc849805d9"
+    },
+    "active_batch_definition": {
+      "datasource_name": "generation_source",
+      "data_connector_name": "fluent",
+      "data_asset_name": "generation_reports",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    },
+    "validation_time": "20260302T030213.974165Z",
+    "checkpoint_name": null
+  },
+  "id": null
+}

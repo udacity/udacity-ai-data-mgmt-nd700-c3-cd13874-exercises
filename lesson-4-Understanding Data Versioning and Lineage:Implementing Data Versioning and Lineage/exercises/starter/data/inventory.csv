@@ -1,0 +1,6 @@
+product_id,product_name,category,brand,store_qty,warehouse_qty,reorder_point,unit_price,supplier,lead_time_days,aisle,last_updated
+1001,Milk 1 Gallon,Dairy,FreshFarm,24,120,40,4.29,FarmFresh,2,A3,2026-03-01
+1002,Whole Wheat Bread,Bakery,GrainHouse,18,80,30,3.49,BakeHouse,1,B1,2026-03-01
+1003,Bananas,Produce,TropicsCo,40,200,50,0.69,TropicsCo,3,P2,2026-03-01
+1004,Eggs Dozen,Dairy,FreshFarm,12,90,25,3.99,FarmFresh,2,A4,2026-03-01
+1005,Orange Juice,Beverages,CitrusBest,16,60,20,5.49,CitrusSupply,4,C2,2026-03-01

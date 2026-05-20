@@ -1,0 +1,10 @@
+azure:
+  chat_deployment: "gpt-4o"
+  embedding_deployment: "text-embedding-3-small"
+
+rag:
+  collection_name: <TODO: your collection name>
+  k: 4
+
+chunking:
+  max_products_per_chunk: 2

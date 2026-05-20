@@ -1,0 +1,13 @@
+[
+  {
+    "document_id": "DOC004",
+    "file_name": "store_safety_manual.txt",
+    "title": "Store Safety Spill Response",
+    "domain": "store_operations",
+    "classification": "internal",
+    "quality_score": 93,
+    "last_updated": "2025-07-28",
+    "approved_for_genai": true,
+    "category": "Safety"
+  }
+]

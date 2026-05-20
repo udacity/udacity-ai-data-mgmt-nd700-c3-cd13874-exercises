@@ -1,0 +1,19 @@
+{
+  "array_shape_hwc": [
+    224,
+    224,
+    3
+  ],
+  "dtype": "float32",
+  "normalized_to_0_1": true,
+  "target_size": [
+    224,
+    224
+  ],
+  "storage_decision": "Store raw image and preprocessing metadata; defer model-specific tokenization until retrieval or model-execution time.",
+  "tensor_shape_chw": [
+    3,
+    224,
+    224
+  ]
+}

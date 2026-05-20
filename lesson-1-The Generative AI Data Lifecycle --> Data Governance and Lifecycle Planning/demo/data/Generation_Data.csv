@@ -1,0 +1,82 @@
+report_id,site_name,inverter_id,battery_id,report_date,power_output_kw,battery_temp_c,status,technician,report_text
+RPT-0001,Desert Sun SF-01,INV-001,BAT-001,2025-02-15T06:00:00,245.3,32.5,OK,J. Morales,"Routine inspection completed, no anomalies detected."
+RPT-0002,Desert Sun SF-01,INV-002,BAT-002,2025-02-15T06:05:00,251.8,78.9,WARNING,S. Patel,Battery temperature trending high near string 2.
+RPT-0003,High Plains SF-02,INV-010,BAT-010,2025-02-15 06:10,260.1,29.4,OK,," ""Inverter restart successful after brief trip; technician name not recorded."""
+RPT-0004,High Plains SF-02,,BAT-011,2025-02-15T06:15:00,255.0,30.2,ERROR,M. Chen,Missing inverter ID in SCADA feed; manual check required.
+RPT-0005,Coastal Ridge SF-03,INV-020,BAT-020,15-02-2025 06:20,248.7,27.9,OK,A. Lopez,Timestamp format inconsistent with standard ISO 8601.
+RPT-0006,Coastal Ridge SF-03,INV-021,BAT-021,2025/02/15 06:25,-15.2,26.3,ERROR,R. Singh,Negative power reading observed; likely sensor or ETL issue.
+RPT-0007,Desert Sun SF-01,INV-003,BAT-003,2025-02-15T06:30:00,0,85.1,CRITICAL,K. Johnson,Battery temperature above safe limit; initiate controlled shutdown.
+RPT-0008,Desert Sun SF-01,INV-003,BAT-003,2025-02-15T06:30:00,0,85.1,CRITICAL,K. Johnson,Battery temperature above safe limit; initiate controlled shutdown. 
+RPT-0009,High Plains SF-02,INV-011,BAT-012,2025-02-15T06:35:00,272.4,25.0,OK,J. Morales,Cleared prior alarm; system stable.
+RPT-0010,High Plains SF-02,INV-011,BAT-012,,268.9,24.7,WARNING,S. Patel,Missing report_date from upstream log; inferred sequence from context.
+RPT-0011,Coastal Ridge SF-03,INV-022,BAT-022,2025-02-15T06:45:00,300.5,91.3,CRITICAL,A. Lopez,Battery rack 3 above 90°C; must be isolated immediately.
+RPT-0012,Coastal Ridge SF-03,INV-022,BAT-022,2025-02-15T06:45:00,300.5,91.3,CRITICAL,A. Lopez,Duplicate of RPT-0011 detected in ingestion pipeline.
+RPT-0013,Desert Sun SF-01,INV-004,BAT-004,2025-02-15T06:50:00,265.0,-5.0,ERROR,R. Singh,Battery temperature reading below plausible range; sensor likely misconfigured.
+RPT-0014,Desert Sun SF-01,INV-XXX,BAT-999,2025-13-15T06:55:00,259.3,33.1,ERROR,K. Johnson,Invalid month in timestamp; cannot parse report_date.
+RPT-0015,High Plains SF-02,INV-012,BAT-013,2025-02-15T07:00:00,280.0,28.4,OK,," ""Technician badge scanned but name not mapped in HR system."""
+RPT-0016,High Plains SF-02,INV-012,BAT-013,2025-02-15T07:05:00,-3.4,120.0,CRITICAL,M. Chen,Simultaneous negative power and >100°C battery temp; verify raw data before AI ingestion.
+RPT-0017,Coastal Ridge SF-03,,BAT-023,2025-02-15T07:10:00,290.2,27.0,WARNING,S. Patel,Inverter ID missing again for string 5; recurring data quality issue.
+RPT-0018,Coastal Ridge SF-03,INV-023,BAT-023,2025-02-15T07:15:00,295.6,150.0,CRITICAL,A. Lopez,Battery fire risk threshold exceeded; do not use this raw log for model training.
+RPT-0019,Desert Sun SF-01,INV-005,BAT-005,2025-02-15T07:20:00,275.9,31.2,OK,J. Morales,All parameters nominal after overnight firmware update.
+RPT-0020,Desert Sun SF-01,INV-005,BAT-005,2025-02-15T07:20:00,275.9,31.2,OK,J. Morales,Exact duplicate of RPT-0019 from CMMS export.
+RPT-0021,High Plains SF-02,INV-013,BAT-014,2025-02-15T07:25:00,0,22.5,WARNING,," ""Inverter offline; technician not yet assigned."""
+RPT-0022,High Plains SF-02,INV-013,BAT-014,2025-02-15T07:30:00,310.7,23.0,OK,M. Chen,Unit back online; cleared offline status.
+RPT-0023,Coastal Ridge SF-03,INV-024,BAT-024,2025-02-15T07:35:00,9999.9,26.8,ERROR,R. Singh,Unrealistically high power_output_kw; likely unit mismatch or corrupted record.
+RPT-0024,Coastal Ridge SF-03,INV-024,BAT-024,2025-02-15T99:99:99,260.4,27.1,ERROR,K. Johnson,Completely invalid timestamp; must be rejected by validation layer.
+RPT-0025,Desert Sun SF-01,INV-006,BAT-006,2028-02-15T07:40:00,270.3,29.0,OK,A. Lopez,Future-dated report; check time sync on field gateway.
+RPT-0026,Desert Sun SF-01,INV-006,BAT-006,2025-02-15T07:45:00,265.8,30.1,OK,,"""Technician left note: 'Call me at 555-123-9876 if this trips again.'"""
+RPT-0027,High Plains SF-02,INV-014,BAT-015,2025-02-15T07:50:00,273.4,28.9,OK,S. Patel,Technician email logged: alex.smith@example.com for follow-up.
+RPT-0028,High Plains SF-02,INV-014,BAT-015,2025-02-15T07:55:00,281.0,27.6,OK,J. Morales,"Full name captured in note: 'Reviewed by Johnathan Reed, ID 847392'."
+RPT-0029,Coastal Ridge SF-03,INV-025,BAT-025,2025-02-15T08:00:00,-0.5,-10.0,ERROR,M. Chen,Both power and temperature out of plausible range; candidate for quarantine dataset.
+RPT-0030,Coastal Ridge SF-03,,BAT-025,,,-999.0,ERROR,," ""Completely malformed record with multiple missing fields; should be blocked at governance layer."""
+RPT-0031,Desert Sun SF-01,,BAT-030,2025-02-15T08:05:00,255.4,28.1,WARNING,J. Morales,Inverter ID missing again; field gateway rebooted.
+RPT-0032,High Plains SF-02,INV-015,BAT-031,,240.0,27.5,OK,S. Patel,Report date missing; sequence inferred from SCADA logs.
+RPT-0033,Coastal Ridge SF-03,INV-026,BAT-026,2025-02-15T08:10:00,-12.0,29.0,ERROR,A. Lopez,Negative power reading; likely CT polarity reversed.
+RPT-0034,Desert Sun SF-01,INV-007,BAT-007,2025-02-15T08:15:00,265.2,102.3,CRITICAL,K. Johnson,Battery temp exceeded 100°C; isolate immediately.
+RPT-0035,High Plains SF-02,INV-016,BAT-032,2025-02-15T08:20:00,280.1,26.4,OK,,Technician name missing; badge scan failed.
+RPT-0036,Coastal Ridge SF-03,INV-027,BAT-027,2025-02-15T08:25:00,99999,25.0,ERROR,R. Singh,Unrealistic power value; corrupted Modbus packet.
+RPT-0037,Desert Sun SF-01,INV-008,BAT-008,2025-02-15T08:30:00,270.0,-20.0,ERROR,M. Chen,Battery temperature below plausible range; sensor fault suspected.
+RPT-0038,High Plains SF-02,INV-017,BAT-033,2025-02-15T08:35:00,0,92.5,CRITICAL,," ""Battery rack overheating; technician not assigned yet."""
+RPT-0039,Coastal Ridge SF-03,INV-028,BAT-028,2025-02-15T08:40:00,250.3,27.8,OK,A. Lopez,Note includes phone number: call 444-882-1199 for follow-up.
+RPT-0040,Desert Sun SF-01,INV-009,BAT-009,2025-02-15T08:45:00,245.0,150.0,CRITICAL,S. Patel,Battery fire threshold exceeded; emergency shutdown triggered.
+RPT-0041,High Plains SF-02,INV-018,BAT-034,2025-02-15T08:50:00,260.0,28.0,OK,J. Morales,"Full name logged: 'Reviewed by Sarah Thompson, ID 55291'."
+RPT-0042,Coastal Ridge SF-03,INV-029,BAT-029,2025-02-15T08:55:00,-5.4,26.0,ERROR,K. Johnson,Negative power reading; inverter suspected offline.
+RPT-0043,Desert Sun SF-01,INV-010,BAT-010,2025-02-15T09:00:00,275.0,200.0,CRITICAL,R. Singh,Battery temperature extremely unsafe; do not ingest into AI pipeline.
+RPT-0044,High Plains SF-02,,BAT-035,2025-02-15T09:05:00,285.0,29.1,WARNING,M. Chen,Missing inverter_id; recurring issue in upstream ETL.
+RPT-0045,Coastal Ridge SF-03,INV-030,BAT-030,2025-02-15T09:10:00,300.0,27.2,OK,," ""Technician name missing; HR sync failed."""
+RPT-0046,Desert Sun SF-01,INV-011,BAT-011,2025-02-15T09:15:00,5000.0,28.0,ERROR,A. Lopez,Power output unrealistic; likely unit mismatch (W vs kW).
+RPT-0047,High Plains SF-02,INV-019,BAT-036,2025-02-15T09:20:00,260.0,95.0,CRITICAL,S. Patel,Battery temp approaching thermal runaway.
+RPT-0048,Coastal Ridge SF-03,INV-031,BAT-031,,270.0,27.0,WARNING,J. Morales,Missing report_date; timestamp dropped during ingestion.
+RPT-0049,Desert Sun SF-01,INV-012,BAT-012,2025-02-15T09:25:00,0,-15.0,ERROR,K. Johnson,Both power and temperature implausible; quarantine recommended.
+RPT-0050,High Plains SF-02,INV-020,BAT-037,2025-02-15T09:30:00,255.0,30.0,OK,R. Singh,Email captured in note: technician.jane@company.com.
+RPT-0051,Prairie View,,BAT-040,2025-02-15T10:00:00,250.0,27.5,WARNING,J. Morales,Inverter ID missing; upstream mapping failed.
+RPT-0052,Baytown,INV-040,BAT-041,,265.2,28.0,OK,S. Patel,Missing report_date; timestamp dropped during sync.
+RPT-0053,River Shores,INV-041,BAT-042,2025-02-15T10:05:00,-8.0,29.1,ERROR,A. Lopez,Negative power reading; CT calibration issue suspected.
+RPT-0054,Prairie View,INV-042,BAT-043,2025-02-15T10:10:00,270.0,105.0,CRITICAL,K. Johnson,Battery temperature above safe limit.
+RPT-0055,Baytown,INV-043,BAT-044,2025-02-15T10:15:00,280.0,26.0,OK,,Technician name missing; badge not scanned.
+RPT-0056,River Shores,INV-044,BAT-045,2025-02-15T10:20:00,99999,25.5,ERROR,R. Singh,Unrealistic power_output_kw; corrupted data packet.
+RPT-0057,Prairie View,INV-045,BAT-046,2025-02-15T10:25:00,260.0,-12.0,ERROR,M. Chen,Battery temperature implausibly low; sensor fault.
+RPT-0058,Baytown,INV-046,BAT-047,2025-02-15T10:30:00,0,92.0,CRITICAL,,Battery overheating; technician not assigned.
+RPT-0059,River Shores,INV-047,BAT-048,2025-02-15T10:35:00,255.0,27.0,OK,J. Morales,PII detected: call 333-991-4422 for updates.
+RPT-0060,Prairie View,INV-048,BAT-049,2025-02-15T10:40:00,270.0,150.0,CRITICAL,S. Patel,Battery fire threshold exceeded; isolate immediately.
+,,,,,,,,,
+RPT-0061,Baytown,INV-049,BAT-050,2025-02-15T10:45:00,260.4,28.1,OK,A. Lopez,Routine inspection completed.
+RPT-0062,River Shores,INV-050,BAT-051,2025-02-15T10:50:00,255.9,27.3,OK,K. Johnson,All readings nominal.
+RPT-0063,Prairie View,INV-051,BAT-052,2025-02-15T10:55:00,270.2,29.0,OK,R. Singh,No issues detected.
+RPT-0064,Baytown,INV-052,BAT-053,2025-02-15T11:00:00,265.0,28.4,OK,M. Chen,Inverter operating within expected range.
+RPT-0065,River Shores,INV-053,BAT-054,2025-02-15T11:05:00,275.1,27.9,OK,J. Morales,Battery and inverter stable.
+RPT-0066,Prairie View,INV-054,BAT-055,2025-02-15T11:10:00,280.0,29.2,OK,S. Patel,System performing normally.
+RPT-0067,Baytown,INV-055,BAT-056,2025-02-15T11:15:00,250.3,26.7,OK,A. Lopez,No alarms triggered.
+RPT-0068,River Shores,INV-056,BAT-057,2025-02-15T11:20:00,260.8,27.5,OK,K. Johnson,Inspection completed successfully.
+RPT-0069,Prairie View,INV-057,BAT-058,2025-02-15T11:25:00,255.0,28.0,OK,R. Singh,All parameters nominal.
+RPT-0070,Baytown,INV-058,BAT-059,2025-02-15T11:30:00,270.5,29.1,OK,M. Chen,No anomalies detected.
+RPT-0071,River Shores,INV-059,BAT-060,2025-02-15T11:35:00,265.7,27.8,OK,J. Morales,System stable.
+RPT-0072,Prairie View,INV-060,BAT-061,2025-02-15T11:40:00,275.0,28.3,OK,S. Patel,Routine check completed.
+RPT-0073,Baytown,INV-061,BAT-062,2025-02-15T11:45:00,260.0,27.4,OK,A. Lopez,All readings within tolerance.
+RPT-0074,River Shores,INV-062,BAT-063,2025-02-15T11:50:00,255.6,26.9,OK,K. Johnson,No corrective action required.
+RPT-0075,Prairie View,INV-063,BAT-064,2025-02-15T11:55:00,280.3,29.0,OK,R. Singh,Inspection passed.
+RPT-0076,Baytown,INV-064,BAT-065,2025-02-15T12:00:00,270.1,28.2,OK,M. Chen,Normal operation.
+RPT-0077,River Shores,INV-065,BAT-066,2025-02-15T12:05:00,265.0,27.6,OK,J. Morales,System functioning correctly.
+RPT-0078,Prairie View,INV-066,BAT-067,2025-02-15T12:10:00,275.4,28.7,OK,S. Patel,No issues found.
+RPT-0079,Baytown,INV-067,BAT-068,2025-02-15T12:15:00,260.9,27.3,OK,A. Lopez,All systems nominal.
+RPT-0080,River Shores,INV-068,BAT-069,2025-02-15T12:20:00,255.2,26.8,OK,K. Johnson,Inspection complete.

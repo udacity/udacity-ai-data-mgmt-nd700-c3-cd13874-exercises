@@ -1,0 +1,3 @@
+{"timestamp": "2026-03-10 01:41:49.272450", "user": "data_scientist", "action": "query", "resource": "do we have product?", "status": "approved"}
+{"timestamp": "2026-03-10 01:42:46.132394", "user": "supply_planner", "action": "query", "resource": "do we have product?", "status": "denied"}
+{"timestamp": "2026-04-15 04:07:18.228478", "user": "data_scientist", "action": "query", "resource": "how much inventory is there in Houston?", "status": "approved"}

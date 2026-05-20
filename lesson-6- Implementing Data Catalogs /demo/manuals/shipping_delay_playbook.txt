@@ -1,0 +1,3 @@
+When a carrier delay exceeds 24 hours, customer support must be notified.
+Urgent orders should be escalated to the logistics coordinator.
+If more than 50 orders in one region are affected, an incident ticket must be opened.

@@ -1,0 +1,4 @@
+Customers may return unopened items within 30 days with a receipt.
+Damaged items must be logged before refund approval.
+Managers approve exceptions for missing receipts.
+Exchanges require verification of the product and reason for return.

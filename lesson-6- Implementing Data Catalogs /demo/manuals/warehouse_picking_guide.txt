@@ -1,0 +1,4 @@
+Pickers scan each tote before selecting items from the assigned aisle.
+Fragile items require protective packing material.
+Packing associates verify item count, print shipping labels,
+and place finished packages in the outbound staging lane.

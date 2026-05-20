@@ -1,0 +1,68 @@
+[
+  {
+    "document_id": "DOC001",
+    "file_name": "store_returns_manual.txt",
+    "title": "Store Returns Manual",
+    "domain": "store_operations",
+    "classification": "internal",
+    "quality_score": 94,
+    "last_updated": "2025-08-01",
+    "approved_for_genai": true,
+    "category": "Store Operations"
+  },
+  {
+    "document_id": "DOC002",
+    "file_name": "warehouse_picking_guide.txt",
+    "title": "Warehouse Picking Guide",
+    "domain": "warehouse",
+    "classification": "internal",
+    "quality_score": 91,
+    "last_updated": "2025-07-15",
+    "approved_for_genai": true,
+    "category": "Warehouse"
+  },
+  {
+    "document_id": "DOC003",
+    "file_name": "shipping_delay_playbook.txt",
+    "title": "Shipping Delay Playbook",
+    "domain": "shipping",
+    "classification": "internal",
+    "quality_score": 89,
+    "last_updated": "2025-06-20",
+    "approved_for_genai": true,
+    "category": "Shipping"
+  },
+  {
+    "document_id": "DOC004",
+    "file_name": "store_safety_manual.txt",
+    "title": "Store Safety Spill Response",
+    "domain": "store_operations",
+    "classification": "internal",
+    "quality_score": 93,
+    "last_updated": "2025-07-28",
+    "approved_for_genai": true,
+    "category": "Safety"
+  },
+  {
+    "document_id": "DOC005",
+    "file_name": "inventory_cycle_count_manual.txt",
+    "title": "Inventory Cycle Count Manual",
+    "domain": "inventory",
+    "classification": "internal",
+    "quality_score": 95,
+    "last_updated": "2025-05-03",
+    "approved_for_genai": true,
+    "category": "Inventory"
+  },
+  {
+    "document_id": "DOC006",
+    "file_name": "employee_handbook.txt",
+    "title": "Employee Handbook",
+    "domain": "hr",
+    "classification": "restricted",
+    "quality_score": 90,
+    "last_updated": "2025-03-01",
+    "approved_for_genai": false,
+    "category": "HR"
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "document_id": "DOC001",
+    "file_name": "store_returns_manual.txt",
+    "title": "Store Returns and Exchanges Manual",
+    "domain": "store_operations",
+    "document_type": "manual",
+    "owner": "Retail Operations",
+    "steward": "Data Governance",
+    "classification": "internal",
+    "quality_score": 94,
+    "last_updated": "2025-08-01",
+    "approved_for_genai": true,
+    "keywords": [
+      "returns",
+      "refunds",
+      "receipts",
+      "damaged items"
+    ]
+  },
+  {
+    "document_id": "DOC002",
+    "file_name": "warehouse_picking_guide.txt",
+    "title": "Warehouse Picking and Packing Guide",
+    "domain": "warehouse",
+    "document_type": "manual",
+    "owner": "Distribution Center Operations",
+    "steward": "Supply Chain Governance",
+    "classification": "internal",
+    "quality_score": 91,
+    "last_updated": "2025-07-15",
+    "approved_for_genai": true,
+    "keywords": [
+      "picking",
+      "packing",
+      "scanner",
+      "labels",
+      "staging"
+    ]
+  },
+  {
+    "document_id": "DOC003",
+    "file_name": "shipping_delay_playbook.txt",
+    "title": "Shipping Delay Response Playbook",
+    "domain": "shipping",
+    "document_type": "playbook",
+    "owner": "Logistics",
+    "steward": "Supply Chain Governance",
+    "classification": "internal",
+    "quality_score": 89,
+    "last_updated": "2025-06-20",
+    "approved_for_genai": true,
+    "keywords": [
+      "carrier delay",
+      "late delivery",
+      "escalation",
+      "incident"
+    ]
+  },
+  {
+    "document_id": "DOC004",
+    "file_name": "inventory_cycle_count.txt",
+    "title": "Inventory Cycle Count Procedure",
+    "domain": "inventory",
+    "document_type": "manual",
+    "owner": "Inventory Control",
+    "steward": "Master Data Team",
+    "classification": "internal",
+    "quality_score": 96,
+    "last_updated": "2025-05-12",
+    "approved_for_genai": true,
+    "keywords": [
+      "cycle count",
+      "variance",
+      "stock adjustment",
+      "shrinkage"
+    ]
+  },
+  {
+    "document_id": "DOC005",
+    "file_name": "employee_handbook.txt",
+    "title": "Employee Handbook",
+    "domain": "hr",
+    "document_type": "policy",
+    "owner": "Human Resources",
+    "steward": "HR Governance",
+    "classification": "internal",
+    "quality_score": 90,
+    "last_updated": "2025-03-01",
+    "approved_for_genai": true,
+    "keywords": [
+      "leave",
+      "attendance",
+      "benefits",
+      "conduct"
+    ]
+  },
+  {
+    "document_id": "DOC006",
+    "file_name": "supplier_pricing_terms.txt",
+    "title": "Supplier Pricing Terms",
+    "domain": "procurement",
+    "document_type": "reference",
+    "owner": "Procurement",
+    "steward": "Legal Data Steward",
+    "classification": "confidential",
+    "quality_score": 92,
+    "last_updated": "2025-04-10",
+    "approved_for_genai": false,
+    "keywords": [
+      "supplier",
+      "pricing",
+      "contract",
+      "renewal"
+    ]
+  },
+  {
+    "document_id": "DOC007",
+    "file_name": "legacy_store_sop.txt",
+    "title": "Legacy Store SOP",
+    "domain": "store_operations",
+    "document_type": "manual",
+    "owner": "Retail Operations",
+    "steward": "Data Governance",
+    "classification": "internal",
+    "quality_score": 62,
+    "last_updated": "2021-09-15",
+    "approved_for_genai": true,
+    "keywords": [
+      "legacy",
+      "register",
+      "nightly close"
+    ]
+  }
+]

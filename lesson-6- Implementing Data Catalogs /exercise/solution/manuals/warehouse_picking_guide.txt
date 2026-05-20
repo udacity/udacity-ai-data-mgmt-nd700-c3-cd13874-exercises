@@ -1,0 +1,4 @@
+Pickers scan each tote before selecting items.
+Fragile items require protective packing material.
+Packages move to outbound staging lanes.
+Warehouse staff should confirm item count before sealing the package.

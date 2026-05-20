@@ -1,0 +1,342 @@
+{
+  "config": {
+    "language": "en",
+    "score_threshold": 0.5,
+    "action": "redact",
+    "entities": null
+  },
+  "reference_document": {
+    "source_file": "reference.md",
+    "clean_file": "reference_clean.md",
+    "pii_findings_count": 46,
+    "findings": [
+      {
+        "entity_type": "EMAIL_ADDRESS",
+        "score": 1.0,
+        "start": 474,
+        "end": 501,
+        "text": "emily.carter@retailcorp.com"
+      },
+      {
+        "entity_type": "EMAIL_ADDRESS",
+        "score": 1.0,
+        "start": 1014,
+        "end": 1040,
+        "text": "m.rodriguez@retailcorp.com"
+      },
+      {
+        "entity_type": "EMAIL_ADDRESS",
+        "score": 1.0,
+        "start": 1456,
+        "end": 1483,
+        "text": "david.nguyen@retailcorp.com"
+      },
+      {
+        "entity_type": "EMAIL_ADDRESS",
+        "score": 1.0,
+        "start": 3488,
+        "end": 3509,
+        "text": "john.miller@gmail.com"
+      },
+      {
+        "entity_type": "CREDIT_CARD",
+        "score": 1.0,
+        "start": 3917,
+        "end": 3936,
+        "text": "4111 1111 1111 1111"
+      },
+      {
+        "entity_type": "EMAIL_ADDRESS",
+        "score": 1.0,
+        "start": 4490,
+        "end": 4511,
+        "text": "kevin.patel@yahoo.com"
+      },
+      {
+        "entity_type": "EMAIL_ADDRESS",
+        "score": 1.0,
+        "start": 5408,
+        "end": 5436,
+        "text": "thomas.walker@retailcorp.com"
+      },
+      {
+        "entity_type": "UK_NHS",
+        "score": 1.0,
+        "start": 5444,
+        "end": 5456,
+        "text": "713-555-7123"
+      },
+      {
+        "entity_type": "EMAIL_ADDRESS",
+        "score": 1.0,
+        "start": 5832,
+        "end": 5855,
+        "text": "jessica.lee@outlook.com"
+      },
+      {
+        "entity_type": "EMAIL_ADDRESS",
+        "score": 1.0,
+        "start": 6575,
+        "end": 6603,
+        "text": "olivia.harris@retailcorp.com"
+      },
+      {
+        "entity_type": "DATE_TIME",
+        "score": 0.85,
+        "start": 84,
+        "end": 89,
+        "text": "daily"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 454,
+        "end": 466,
+        "text": "Emily Carter"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 966,
+        "end": 992,
+        "text": "Michael Rodriguez Employee"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 1414,
+        "end": 1435,
+        "text": "David Nguyen Employee"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 1878,
+        "end": 1891,
+        "text": "Laura Jenkins"
+      },
+      {
+        "entity_type": "DATE_TIME",
+        "score": 0.85,
+        "start": 2940,
+        "end": 2948,
+        "text": "Seasonal"
+      },
+      {
+        "entity_type": "DATE_TIME",
+        "score": 0.85,
+        "start": 3171,
+        "end": 3181,
+        "text": "30 seconds"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 3449,
+        "end": 3460,
+        "text": "John Miller"
+      },
+      {
+        "entity_type": "LOCATION",
+        "score": 0.85,
+        "start": 3537,
+        "end": 3544,
+        "text": "Houston"
+      },
+      {
+        "entity_type": "LOCATION",
+        "score": 0.85,
+        "start": 3546,
+        "end": 3548,
+        "text": "TX"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 3888,
+        "end": 3902,
+        "text": "Maria Gonzalez"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 4471,
+        "end": 4482,
+        "text": "Kevin Patel"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 5387,
+        "end": 5400,
+        "text": "Thomas Walker"
+      },
+      {
+        "entity_type": "DATE_TIME",
+        "score": 0.85,
+        "start": 5583,
+        "end": 5591,
+        "text": "Seasonal"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 5791,
+        "end": 5810,
+        "text": "Jessica Lee Loyalty"
+      },
+      {
+        "entity_type": "PERSON",
+        "score": 0.85,
+        "start": 6554,
+        "end": 6567,
+        "text": "Olivia Harris"
+      },
+      {
+        "entity_type": "PHONE_NUMBER",
+        "score": 0.75,
+        "start": 509,
+        "end": 523,
+        "text": "(713) 555-2841"
+      },
+      {
+        "entity_type": "PHONE_NUMBER",
+        "score": 0.75,
+        "start": 1048,
+        "end": 1060,
+        "text": "713-555-9912"
+      },
+      {
+        "entity_type": "PHONE_NUMBER",
+        "score": 0.75,
+        "start": 1899,
+        "end": 1913,
+        "text": "(832) 555-4176"
+      },
+      {
+        "entity_type": "PHONE_NUMBER",
+        "score": 0.75,
+        "start": 3468,
+        "end": 3480,
+        "text": "713-555-1042"
+      },
+      {
+        "entity_type": "PHONE_NUMBER",
+        "score": 0.75,
+        "start": 4519,
+        "end": 4533,
+        "text": "(281) 555-8821"
+      },
+      {
+        "entity_type": "PHONE_NUMBER",
+        "score": 0.75,
+        "start": 5444,
+        "end": 5456,
+        "text": "713-555-7123"
+      },
+      {
+        "entity_type": "PHONE_NUMBER",
+        "score": 0.75,
+        "start": 6611,
+        "end": 6623,
+        "text": "713-555-6678"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 474,
+        "end": 483,
+        "text": "emily.car"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 487,
+        "end": 501,
+        "text": "retailcorp.com"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 1014,
+        "end": 1018,
+        "text": "m.ro"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 1026,
+        "end": 1040,
+        "text": "retailcorp.com"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 1456,
+        "end": 1464,
+        "text": "david.ng"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 1469,
+        "end": 1483,
+        "text": "retailcorp.com"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 3488,
+        "end": 3496,
+        "text": "john.mil"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 3500,
+        "end": 3509,
+        "text": "gmail.com"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 4490,
+        "end": 4498,
+        "text": "kevin.pa"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 4502,
+        "end": 4511,
+        "text": "yahoo.com"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 5422,
+        "end": 5436,
+        "text": "retailcorp.com"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 5844,
+        "end": 5855,
+        "text": "outlook.com"
+      },
+      {
+        "entity_type": "URL",
+        "score": 0.5,
+        "start": 6589,
+        "end": 6603,
+        "text": "retailcorp.com"
+      }
+    ]
+  },
+  "dataset_summary": {
+    "total_examples": 22,
+    "train_examples": 17,
+    "valid_examples": 5
+  }
+}

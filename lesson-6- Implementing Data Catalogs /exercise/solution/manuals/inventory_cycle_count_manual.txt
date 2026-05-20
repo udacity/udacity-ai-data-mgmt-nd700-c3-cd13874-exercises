@@ -1,0 +1,4 @@
+Cycle counts are performed weekly by zone.
+If the variance exceeds five units, a recount is required.
+Stock adjustments must be approved by the inventory supervisor.
+Shrinkage trends should be reviewed by leadership.

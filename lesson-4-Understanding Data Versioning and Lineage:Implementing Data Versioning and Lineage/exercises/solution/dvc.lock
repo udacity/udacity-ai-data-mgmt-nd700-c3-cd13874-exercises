@@ -1,0 +1,59 @@
+schema: '2.0'
+stages:
+  build_prompt:
+    cmd: python src/build_prompt.py
+    deps:
+    - path: data/inventory.csv
+      hash: md5
+      md5: 3d0deea8ecf0faf5b0ee7769cd2a04f7
+      size: 513
+    - path: prompts/base_rules.txt
+      hash: md5
+      md5: 2b2ce31969b5e11ea027b74df2c83d22
+      size: 398
+    - path: src/build_prompt.py
+      hash: md5
+      md5: 6ec41b23c1b011a9b878c22c487e1fe3
+      size: 1545
+    outs:
+    - path: artifacts/system_prompt.txt
+      hash: md5
+      md5: 2f740f33d42b7bc4bd7ca405cb0f18b0
+      size: 1534
+  build_index:
+    cmd: python src/build_index.py
+    deps:
+    - path: artifacts/system_prompt.txt
+      hash: md5
+      md5: 2f740f33d42b7bc4bd7ca405cb0f18b0
+      size: 1534
+    - path: data/inventory.csv
+      hash: md5
+      md5: 3d0deea8ecf0faf5b0ee7769cd2a04f7
+      size: 513
+    - path: params.yaml
+      hash: md5
+      md5: 40a7e0917e28a07042d721adaae3348f
+      size: 178
+    - path: src/build_index.py
+      hash: md5
+      md5: 7ea78806d6c8c590e328dd2c08d73935
+      size: 3656
+    - path: src/common.py
+      hash: md5
+      md5: 352d85c42d27910ec4dd0322befb5699
+      size: 1861
+    outs:
+    - path: artifacts/chroma_db
+      hash: md5
+      md5: 30774e0969455f3c1f676edeff6f96f0.dir
+      size: 850084
+      nfiles: 5
+    - path: artifacts/chunks.jsonl
+      hash: md5
+      md5: 1130a0b9cc9ef0f63fc7fd903b440180
+      size: 1489
+    - path: artifacts/metrics.json
+      hash: md5
+      md5: 01f99fe2ac6ad201adca928925493995
+      size: 112

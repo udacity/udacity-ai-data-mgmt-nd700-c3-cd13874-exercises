@@ -1,0 +1,6 @@
+{"timestamp": "2026-03-10 01:41:49.272450", "user": "data_scientist", "action": "query", "resource": "do we have product?", "status": "approved"}
+{"timestamp": "2026-03-10 01:42:46.132394", "user": "supply_planner", "action": "query", "resource": "do we have product?", "status": "denied"}
+{"timestamp": "2026-04-15 04:09:25.414152", "user": "supply_planner", "action": "query", "resource": "is there an approved supplier?", "status": "approved"}
+{"timestamp": "2026-04-15 04:09:41.693218", "user": "supply_planner", "action": "query", "resource": "what can be manufactured?", "status": "denied"}
+{"timestamp": "2026-04-15 04:10:10.253516", "user": "supply_planner", "action": "query", "resource": "what is the production output?", "status": "approved"}
+{"timestamp": "2026-04-15 04:10:31.473311", "user": "supply_planner", "action": "query", "resource": "What did plat 4 produce?", "status": "approved"}

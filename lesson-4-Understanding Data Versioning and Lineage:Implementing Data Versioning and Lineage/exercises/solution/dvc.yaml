@@ -1,0 +1,23 @@
+stages:
+  build_prompt:
+    cmd: python src/build_prompt.py
+    deps:
+      - data/inventory.csv
+      - prompts/base_rules.txt
+      - src/build_prompt.py
+    outs:
+      - artifacts/system_prompt.txt
+
+  build_index:
+    cmd: python src/build_index.py
+    deps:
+      - data/inventory.csv
+      - artifacts/system_prompt.txt
+      - src/build_index.py
+      - src/common.py
+      - params.yaml
+    metrics:
+      - artifacts/metrics.json
+    outs:
+      - artifacts/chunks.jsonl
+      - artifacts/chroma_db

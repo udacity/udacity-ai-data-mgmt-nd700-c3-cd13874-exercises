@@ -1,0 +1,23 @@
+{
+  "supply_planner": {
+    "read_stages": ["procurement", "manufacturing"],
+    "write_embeddings": false
+  },
+  "logistics_coordinator": {
+    "read_stages": ["warehousing", "distribution"],
+    "write_embeddings": false
+  },
+  "data_scientist": {
+    "read_stages": [
+      "procurement",
+      "manufacturing",
+      "warehousing",
+      "distribution"
+    ],
+    "write_embeddings": true
+  },
+  "procurement_manager": {
+    "read_stages": ["procurement"],
+    "write_embeddings": false
+  }
+}

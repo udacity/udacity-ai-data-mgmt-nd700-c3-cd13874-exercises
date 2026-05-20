@@ -1,0 +1,237 @@
+{
+  "config": {
+    "language": "en",
+    "score_threshold": 0.5,
+    "action": "drop",
+    "entities": null
+  },
+  "summary": {
+    "train_before": 19,
+    "train_after": 15,
+    "train_flagged": 4,
+    "valid_before": 5,
+    "valid_after": 3,
+    "valid_flagged": 2
+  },
+  "train_flagged": [
+    {
+      "index": 4,
+      "findings": [
+        {
+          "entity_type": "DATE_TIME",
+          "score": 0.85,
+          "start": 132,
+          "end": 140,
+          "text": "seasonal"
+        }
+      ],
+      "record": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant. You will be presented with a question, please provide a clear and accurate answer."
+          },
+          {
+            "role": "user",
+            "content": "What are some examples of retail promotions mentioned in the text?"
+          },
+          {
+            "role": "assistant",
+            "content": "Examples of retail promotions mentioned include seasonal discounts, buy-one-get-one offers, clearance sales, and loyalty program rewards."
+          }
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "findings": [
+        {
+          "entity_type": "EMAIL_ADDRESS",
+          "score": 1.0,
+          "start": 141,
+          "end": 169,
+          "text": "olivia.harris@retailcorp.com"
+        },
+        {
+          "entity_type": "PERSON",
+          "score": 0.85,
+          "start": 88,
+          "end": 101,
+          "text": "Olivia Harris"
+        },
+        {
+          "entity_type": "PHONE_NUMBER",
+          "score": 0.75,
+          "start": 185,
+          "end": 197,
+          "text": "713-555-6678"
+        },
+        {
+          "entity_type": "URL",
+          "score": 0.5,
+          "start": 155,
+          "end": 169,
+          "text": "retailcorp.com"
+        }
+      ],
+      "record": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant. You will be presented with a question, please provide a clear and accurate answer."
+          },
+          {
+            "role": "user",
+            "content": "Who is the HR Manager and how can they be contacted?"
+          },
+          {
+            "role": "assistant",
+            "content": "The HR Manager is Olivia Harris, and she can be contacted via email at olivia.harris@retailcorp.com or by phone at 713-555-6678."
+          }
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "findings": [
+        {
+          "entity_type": "DATE_TIME",
+          "score": 0.85,
+          "start": 133,
+          "end": 143,
+          "text": "30 seconds"
+        }
+      ],
+      "record": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant. You will be presented with a question, please provide a clear and accurate answer."
+          },
+          {
+            "role": "user",
+            "content": "What actions should retail employees take to provide good customer service?"
+          },
+          {
+            "role": "assistant",
+            "content": "Employees should greet customers within 30 seconds, offer assistance when customers appear to need help, maintain a friendly and professional attitude, and resolve customer issues quickly."
+          }
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "findings": [
+        {
+          "entity_type": "DATE_TIME",
+          "score": 0.85,
+          "start": 133,
+          "end": 138,
+          "text": "daily"
+        }
+      ],
+      "record": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant. You will be presented with a question, please provide a clear and accurate answer."
+          },
+          {
+            "role": "user",
+            "content": "List three common metrics used in retail analytics from the text."
+          },
+          {
+            "role": "assistant",
+            "content": "Three common metrics used in retail analytics are daily sales revenue, average transaction value, and inventory turnover."
+          }
+        ]
+      }
+    }
+  ],
+  "valid_flagged": [
+    {
+      "index": 1,
+      "findings": [
+        {
+          "entity_type": "PERSON",
+          "score": 0.85,
+          "start": 21,
+          "end": 34,
+          "text": "Laura Jenkins"
+        },
+        {
+          "entity_type": "PERSON",
+          "score": 0.85,
+          "start": 81,
+          "end": 94,
+          "text": "Laura Jenkins"
+        }
+      ],
+      "record": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant. You will be presented with a question, please provide a clear and accurate answer."
+          },
+          {
+            "role": "user",
+            "content": "What role does Laura Jenkins hold and what are her main duties?"
+          },
+          {
+            "role": "assistant",
+            "content": "Laura Jenkins is an inventory specialist whose duties include receiving shipments, scanning inventory, conducting inventory counts, investigating discrepancies, and organizing stockrooms."
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "findings": [
+        {
+          "entity_type": "EMAIL_ADDRESS",
+          "score": 1.0,
+          "start": 164,
+          "end": 187,
+          "text": "jessica.lee@outlook.com"
+        },
+        {
+          "entity_type": "PERSON",
+          "score": 0.85,
+          "start": 70,
+          "end": 81,
+          "text": "Jessica Lee"
+        },
+        {
+          "entity_type": "PERSON",
+          "score": 0.85,
+          "start": 94,
+          "end": 105,
+          "text": "Jessica Lee"
+        },
+        {
+          "entity_type": "URL",
+          "score": 0.5,
+          "start": 176,
+          "end": 187,
+          "text": "outlook.com"
+        }
+      ],
+      "record": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant. You will be presented with a question, please provide a clear and accurate answer."
+          },
+          {
+            "role": "user",
+            "content": "What information is provided about the loyalty program customer Jessica Lee?"
+          },
+          {
+            "role": "assistant",
+            "content": "Jessica Lee is a customer with Loyalty ID LC-882114, and her email is jessica.lee@outlook.com."
+          }
+        ]
+      }
+    }
+  ]
+}
