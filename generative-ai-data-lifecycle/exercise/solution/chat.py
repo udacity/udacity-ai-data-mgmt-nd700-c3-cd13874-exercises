@@ -19,7 +19,7 @@ import great_expectations as gx
 import chromadb
 
 from openai import AzureOpenAI
-from azure.identity import InteractiveBrowserCredential
+from azure.identity import DeviceCodeCredential
 from azure.keyvault.secrets import SecretClient
 
 
