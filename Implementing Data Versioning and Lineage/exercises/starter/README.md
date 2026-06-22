@@ -30,6 +30,27 @@ The repository is already at tag `inventory-v1`. Do not modify the inventory dat
 pip install -r requirements.txt
 ```
 
+**Initialise the local git repo and create the `inventory-v1` tag.** Required only if you plan to do the rollback parts (Parts 3 and 4). Pick one option:
+
+*Option A — Run the helper script (no Git account needed):*
+
+```bash
+bash setup.sh
+```
+
+Sets a repo-local `user.email` and `user.name`, makes the baseline commit, and creates the `inventory-v1` tag. Re-running it is a no-op.
+
+*Option B — Initialise it yourself (uses your own Git identity):*
+
+```bash
+git init
+git add .
+git commit -m "Baseline (inventory-v1)"
+git tag inventory-v1
+```
+
+Requires Git configured with your name and email (globally via `git config --global` or signed in to your environment).
+
 **Confirm the pipeline is up to date:**
 
 ```bash
