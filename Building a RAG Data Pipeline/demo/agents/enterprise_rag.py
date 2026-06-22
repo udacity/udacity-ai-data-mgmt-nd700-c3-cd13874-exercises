@@ -227,13 +227,20 @@ Answer clearly and concisely:
         return record["summary"] if record else ""
 
     def update_memory(self, session_id, conversation_text):
-
-        summary_prompt = f"""
-Summarize this conversation briefly:
-
-{conversation_text}
-"""
-
+        """
+        Summarise the running memory plus the latest conversation turn and persist.
+        """
+        existing_summary = self.get_memory(session_id)
+        summary_prompt = (
+            "You maintain a concise running memory for one RAG chat session.\n\n"
+            "Existing session summary:\n"
+            f"{existing_summary or '(none yet)'}\n\n"
+            "Latest exchange:\n"
+            f"{conversation_text}\n\n"
+            "Write an updated cumulative summary. Preserve durable facts, user intent, "
+            "important constraints, and unresolved follow-ups. Do not include unnecessary "
+            "verbatim transcript."
+        )
         response = self.llm.invoke(summary_prompt)
 
         self.memory.update_one(

@@ -249,13 +249,20 @@ class EnterpriseRAG:
 
     def update_memory(self, session_id: str, conversation_text: str) -> None:
         """
-        Summarise the latest conversation turn and persist.
+        Summarise the running memory plus the latest conversation turn and persist.
         """
+        existing_summary = self.get_memory(session_id)
         summary_prompt = (
-            "Summarize the following conversation exchange briefly and neutrally:\n\n"
-            f"{conversation_text}"
+            "You maintain a concise running memory for one RAG chat session.\n\n"
+            "Existing session summary:\n"
+            f"{existing_summary or '(none yet)'}\n\n"
+            "Latest exchange:\n"
+            f"{conversation_text}\n\n"
+            "Write an updated cumulative summary. Preserve durable facts, user intent, "
+            "important constraints, and unresolved follow-ups. Do not include unnecessary "
+            "verbatim transcript."
         )
-        response = self.<TODO 18: Call the Azure Chat model with the summary_prompt to get a summary of the conversation turn>  
+        response = self.<TODO 18: Call the Azure Chat model with the summary_prompt to get a summary of the conversation turn>
 
         record = {
             "session_id": session_id,
