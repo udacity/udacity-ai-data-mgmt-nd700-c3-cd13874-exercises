@@ -51,12 +51,12 @@ Rules:
 
 **Question:** `Should we reorder milk?`
 
-| Version | Answer |
+| Version | Sample answer |
 |---|---|
 | **Prompt v1** | Milk inventory is below the reorder point. You should place a reorder with supplier FarmFresh. Lead time is 2 days. |
 | **Prompt v2** | Milk inventory is below the reorder point. Supplier: FarmFresh. Lead time: 2 days. |
 
-Same data. Same embeddings. Different prompt → different answer. The recommendation disappears because the prompt was changed to forbid it.
+Exact response varies with the model. Same data. Same embeddings. Different prompt → different answer. The recommendation disappears or softens because the prompt was changed to forbid it.
 
 ---
 
@@ -133,7 +133,7 @@ The original answer — including the recommendation — should reappear.
 
 Given only an answer, can you determine which prompt version produced it?
 
-Your instructor will provide one of these two answers:
+Your instructor will provide one of these two sample answers (exact response varies with the model):
 
 ```
 (A) Milk inventory is below the reorder point.
